@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Dashboard</title>
+
+</head>
+<body>
+    <main class="container">
+        <div class= "formcontainer notvisible">
+            <form class="requestform notvisible" action="" name="newrequest">
+                <a class="formclose"> 
+                    <i class="large material-icons">arrow_back</i>
+                    
+                </a>
+                <h2>New Reimbursement Request</h2>
+                <span>AMOUNT</span>
+                <input type="text" name="amount" class="input" />
+    
+                <span>DESCRIPTION</span>
+                <textarea type="textarea" name="description" class="input"></textarea>
+    
+    
+                <button id="submit-button" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h2 class="companyname">ERS</h2>
+            <a class="sidebaritem current" href="/dashboard/">
+                <i class="small material-icons">dashboard
+                </i>
+
+                &nbsp&nbspDashboard
+            </a>
+            <a class="sidebaritem" href="/requests/">
+                <i class="small material-icons">collections_bookmark
+                </i>
+
+                &nbsp&nbspMy Requests
+            </a>
+            <a class="sidebaritem" href="/profile/"> 
+                <i class="small material-icons">account_circle
+                </i>
+
+                &nbsp&nbspProfile
+            </a>
+            <a class="sidebaritem notvisible" href="/manage/"> 
+                <i class="small material-icons">group
+                </i>
+
+                &nbsp&nbspMy Employees
+            </a>
+        </div>
+        <div class="mainsection" >
+            <section id="user_info">
+
+                <div class="logout">
+                    <span class="displayname"></span>
+
+                    <a class="logoutbutton">Logout</a>
+                    
+                </div>
+            </section>
+            <section class="content">
+
+                <div class= "content-window">
+                    <div class="contentrow1">
+                        <h2 class="windowname">
+                            
+                            Recent Requests</h2>
+                        <h2 class="allrequests" >
+                            <i class="large material-icons">navigate_next
+                            </i>All Requests</h2>
+
+                        <a class="newrequestbutton">
+                            <i class="large material-icons">add_box</i>
+                            &nbsp&nbspNew Request</a>
+                    </div>
+
+                    <table class="reqlist">
+                        <thead>
+                            <tr>
+                                <th>Request #</th>
+                                <th>Requestor ID</th>
+                                <th>Amount</th>
+                                <th>Date Submitted</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+
+                        
+                        
+                    </table>
+                </div>
+            </section>
+
+
+        </div>
+
+        
+    </main>
+
+      <script type="module" src="index.js"> </script>
+
+</body>
+</html>

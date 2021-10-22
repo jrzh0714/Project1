@@ -1,0 +1,90 @@
+@import url("../dashboard/style.css");
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.fullreqlist {
+  width: 65%;
+  height: 70%;
+}
+.pages {
+  width: 65%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#pagelist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.pageindex {
+  padding: 5px;
+}
+.pageindex:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.prevpage,
+.nextpage {
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 5px 5px 0 5px;
+}
+.prevpage:hover,
+.nextpage:hover {
+  background-color: rgba(189, 174, 155, 0.315);
+  cursor: pointer;
+}
+.currentpage {
+  font-weight: 700;
+  font-size: 16px;
+}
+#requesttypes {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  font-family: inherit;
+}
+#requesttypes > option {
+  padding: 5px;
+}
+.requestviews > span {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.contentrow1 {
+  width: 80%;
+}
+
+.approvereq,
+.denyreq {
+  border: none;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 5px 4px 0 4px;
+  color: #3b3737;
+}
+
+.approvereq:hover,
+.denyreq:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+.approvereq {
+  background-color: rgb(58, 200, 45);
+}
+.denyreq {
+  background-color: rgb(216, 60, 60);
+}

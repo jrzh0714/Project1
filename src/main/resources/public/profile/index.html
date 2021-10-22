@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Profile</title>
+
+</head>
+<body>
+    <main class="container">
+        <div class= "formcontainer notvisible">
+            <form class="requestform notvisible" action="" name="newrequest">
+                <a class="formclose"> 
+                    <i class="large material-icons">arrow_back</i>
+                    
+                </a>
+
+                <span>AMOUNT</span>
+                <input type="text" name="amount" class="input" />
+    
+                <span>DESCRIPTION</span>
+                <textarea type="textarea" name="description" class="input"></textarea>
+    
+    
+                <button id="submit-button" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h2 class="companyname">ERS</h2>
+            <a class="sidebaritem " href="/dashboard/">
+                <i class="small material-icons">dashboard
+                </i>
+
+                &nbsp&nbspDashboard
+            </a>
+            <a class="sidebaritem" href="/requests/">
+                <i class="small material-icons">collections_bookmark
+                </i>
+
+                &nbsp&nbspMy Requests
+            </a>
+            <a class="sidebaritem current" href="/profile/">
+                <i class="small material-icons">account_circle
+                </i>
+
+                &nbsp&nbspProfile
+            </a>
+            <a class="sidebaritem notvisible" href="/manage/"> 
+                <i class="small material-icons">group
+                </i>
+
+                &nbsp&nbspMy Employees
+            </a>
+        </div>
+        <div class="mainsection">
+            <section id="user_info">
+
+                <div class="logout">
+                    <span class="displayname"></span>
+
+                    <a class="logoutbutton">Logout</a>
+                    
+                </div>
+            </section>
+            <section class="content">
+                <div id="loading1"></div>
+
+                <div class= "content-window">
+                    <div class="contentrow1">
+                        <h2 class="windowname">My Profile</h2>
+                        
+                    </div>
+
+                    <div class ="userdetail">
+                        <div class= "profileoptions">
+                            <div class="userbutton" id="prof">
+                                <a class="editprofile "> Edit Profile</a>
+    
+                            </div>
+                            <div class="userbutton" id="pw">
+                                    <a class="changepw "> Change Password</a>
+                            </div>  
+                        </div>
+                        <div class="forms">
+                            <form class="userdetailform" action="" name="userdetail" >
+                                <div class="formrow">
+                                    <span>ID</span>
+                                    <input class= "uneditable" id = "userid" type="text" readonly/>
+                                </div>
+                                <div class="formrow">
+                                    <span>Username</span>
+                                    <input class= "uneditable"  id = "username" type="text" readonly/> 
+                                </div>
+    
+                                <div class="formrow">
+                                    <span>Password</span>
+                                    <input class= "uneditable" id = "userpassword" placeholder="•••••••••••" type="password" readonly/> 
+                                </div>
+                                <div class="formrow">
+                                    <span>Email</span>
+                                    <input class= "uneditable" id = "useremail" type="text" readonly/> 
+        
+                                </div>
+                                <div class="formrow">
+                                    <span>User Type</span>
+                                    <input class= "uneditable" id = "userstatus" type="text" readonly/> 
+                                </div>
+    
+                                <div class="buttonrow notvisible">
+                                    <button id="savebutton" class="profilebutton">SAVE</button>
+    
+                                    <button id="cancelbutton" class="profilebutton">CANCEL</button>
+    
+                                </div>
+    
+                                
+                            </form>
+                            <form class="changepwform notvisible" action="" name="userdetail" >
+                                <i class="bi bi-eye-slash" id="togglePassword" alt="View password"></i>
+
+                                <div class="formrow">
+                                    <span>Old Password</span>
+                                    <input class= "pwinput" id = "oldpass" type="password" /> 
+                                </div>
+                                <div class="formrow">
+                                    <span>New Password</span>
+                                    <input class= "pwinput" id = "newpass" type="password" /> 
+        
+                                </div>
+                                <div class="formrow">
+                                    <span>Confirm New Password</span>
+                                    <input class= "pwinput" id = "confirmnewpass" type="password" /> 
+                                </div>
+    
+                                <div class="pwbuttonrow notvisible">
+                                    <button id="pwsavebutton" class="profilebutton">SAVE</button>
+    
+                                    <button id="pwcancelbutton" class="profilebutton">CANCEL</button>
+    
+                                </div>
+                                
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        
+    </main>
+
+      <script type="module" src="index.js"> </script>
+
+</body>
+</html>

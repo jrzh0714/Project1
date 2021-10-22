@@ -1,0 +1,22 @@
+2021-10-13 10:32:58,783 INFO c.e.e.s.UserService [qtp65438140-29] New User Login: User{user_id=0, username='jerry.zheng', password='pass1', email='null', isEmployee=false}
+2021-10-13 10:33:04,330 INFO c.e.e.s.UserService [qtp65438140-18] New User Login: User{user_id=0, username='jerry.zheng', password='pass', email='null', isEmployee=false}
+2021-10-13 10:33:52,331 INFO c.e.e.s.RequestService [qtp65438140-19] updating Request
+2021-10-13 10:34:02,828 INFO c.e.e.s.RequestService [qtp65438140-30] updating Request
+2021-10-13 10:34:37,970 INFO c.e.e.s.UserService [qtp65438140-18] Editing user info: User{user_id=1, username='jerry.zheng', password='pass', email='jerry.zheng@revature.com', isEmployee=true}
+2021-10-13 10:34:58,351 INFO c.e.e.s.UserService [qtp65438140-30] User changing password: User{user_id=1, username='jerry.zheng', password='pass1', email='jerry.zheng@revature.com', isEmployee=true}
+2021-10-13 10:35:28,376 INFO c.e.e.s.UserService [qtp65438140-18] Saving User
+2021-10-13 10:35:51,737 INFO c.e.e.c.UserController [qtp65438140-18] user logout 
+2021-10-13 10:36:05,078 INFO c.e.e.s.UserService [qtp65438140-18] New User Login: User{user_id=0, username='test1013', password='-xb-JKHf91', email='null', isEmployee=false}
+2021-10-13 10:36:15,424 INFO c.e.e.s.RequestService [qtp65438140-19] Saving Request
+2021-10-13 10:36:31,509 INFO c.e.e.c.UserController [qtp65438140-19] user logout 
+2021-10-13 10:36:45,784 INFO c.e.e.s.UserService [qtp65438140-30] New User Login: User{user_id=0, username='jerry.zheng', password='pass1', email='null', isEmployee=false}
+2021-10-13 10:36:56,908 INFO c.e.e.c.UserController [qtp65438140-30] user logout 
+2021-10-13 10:37:49,862 INFO c.e.e.s.UserService [main] User changing password: User{user_id=9, username='testinguser', password='7Lb+69,WkU', email='lol@gmail.com', isEmployee=false}
+2021-10-13 10:38:25,463 INFO c.e.e.s.UserService [main] User changing password: User{user_id=9, username='testinguser', password='OY3ywgP9%,', email='lol@gmail.com', isEmployee=false}
+2021-10-13 10:39:01,519 INFO c.e.e.s.UserService [main] User changing password: User{user_id=9, username='testinguser', password='+J82!LHgSq', email='lol@gmail.com', isEmployee=false}
+2021-10-13 10:42:29,126 INFO c.e.e.s.UserService [qtp65438140-28] New User Login: User{user_id=0, username='jerry.zheng', password='pass', email='null', isEmployee=false}
+2021-10-13 10:42:34,240 INFO c.e.e.s.UserService [qtp65438140-28] New User Login: User{user_id=0, username='jerry.zheng', password='paas1', email='null', isEmployee=false}
+2021-10-13 10:42:38,747 INFO c.e.e.s.UserService [qtp65438140-28] New User Login: User{user_id=0, username='jerry.zheng', password='pass1', email='null', isEmployee=false}
+2021-10-13 10:43:24,733 INFO c.e.e.c.UserController [qtp65438140-17] user logout 
+2021-10-13 10:46:49,192 INFO c.e.e.s.UserService [qtp65438140-31] New User Login: User{user_id=0, username='jerry.zheng', password='pass1', email='null', isEmployee=false}
+2021-10-13 10:47:52,180 INFO c.e.e.c.UserController [qtp65438140-20] user logout 

@@ -1,0 +1,146 @@
+@import url("../dashboard/style.css");
+
+.employeelist {
+  margin-top: 50px;
+  opacity: 1;
+  flex-direction: column;
+  background-color: rgba(218, 219, 226, 0.438);
+  width: 60%;
+  height: 50%;
+  border-radius: 0.7em;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(2px);
+}
+.newempform {
+  margin-top: 50px;
+  opacity: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(232, 233, 236, 0.87);
+  padding: 50px 50px 70px 80px;
+  width: 50%;
+  align-items: flex-start;
+
+  border-radius: 0.7em;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(2px);
+}
+.newempform > h2 {
+  margin-bottom: 40px;
+}
+.newempform > input {
+  font-size: 0.8em;
+  height: 1.2vh;
+  width: 10vw;
+  min-height: 35px;
+  border: 0.05em solid gray;
+  border-radius: 0.2em;
+  padding: 4px 0 2px 8px;
+  margin-bottom: 3vh;
+  min-width: 100px;
+  outline: none;
+  font-family: inherit;
+}
+
+.newempform > span {
+  font-weight: 700;
+  color: rgb(83, 81, 81);
+  margin: 0 0 0.4em 0.1em;
+  font-size: 0.9rem;
+}
+.employeeoptions {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+
+  margin-top: 40px;
+}
+.empbutton {
+  display: flex;
+  color: rgb(247, 247, 247);
+  flex-direction: row;
+  font-size: 1em;
+  transition: 0.4s;
+  font-weight: 600;
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(30, 45, 59);
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.empbutton:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.uneditable {
+  background-color: rgb(170, 170, 162);
+}
+.buttonrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  width: 90%;
+}
+.pwbuttonrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  width: 70%;
+}
+.profilebutton {
+  transition: 0.4s;
+
+  border: none;
+  font-family: inherit;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: rgb(59, 59, 59);
+}
+.profilebutton:hover {
+  cursor: pointer;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#savebutton,
+#pwsavebutton {
+  background-color: rgb(44, 184, 51);
+}
+
+#cancelbutton,
+#pwcancelbutton {
+  background-color: rgb(209, 64, 64);
+}
+
+.notvisible {
+  display: none;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+#loading.display {
+  visibility: visible;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
